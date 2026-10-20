@@ -1,0 +1,30 @@
+{
+  "name": "brightpath-fullstack",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Responsive education app with React, Express, and SQLite",
+  "engines": {
+    "node": ">=24.0.0 <25"
+  },
+  "scripts": {
+    "dev": "node scripts/dev.mjs",
+    "dev:api": "node --env-file-if-exists=.env --watch server/index.js",
+    "dev:web": "vite --host 127.0.0.1",
+    "build": "vite build",
+    "start": "node --env-file-if-exists=.env server/index.js",
+    "setup": "node scripts/setup.mjs",
+    "test": "node --test --test-concurrency=1 tests/*.test.js"
+  },
+  "dependencies": {
+    "express": "5.3.0",
+    "lucide-react": "0.468.0",
+    "react": "19.3.1",
+    "react-dom": "19.3.1",
+    "react-router-dom": "7.18.4",
+    "zod": "3.24.2"
+  },
+  "devDependencies": {
+    "vite": "8.3.4"
+  }
+}

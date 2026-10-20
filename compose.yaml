@@ -1,0 +1,17 @@
+services:
+  brightpath:
+    build: .
+    ports:
+      - "127.0.0.1:4000:4000"
+    environment:
+      HOST: 0.0.0.0
+      PORT: 4000
+      DATABASE_PATH: /app/data/brightpath.sqlite
+      DEMO_MODE: "true"
+      SECURE_COOKIES: "false"
+      APP_ORIGINS: http://localhost:4000,http://127.0.0.1:4000
+    volumes:
+      - brightpath_data:/app/data
+    restart: unless-stopped
+volumes:
+  brightpath_data:

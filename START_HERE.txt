@@ -1,0 +1,23 @@
+BRIGHTPATH — FULL-STACK REACT EDUCATION APP
+
+1. Install Node.js 24.x: https://nodejs.org/en/download
+2. Extract this ZIP completely.
+3. Run SETUP_WINDOWS.bat once (internet required for npm packages).
+4. Run START_WINDOWS.bat and keep it open.
+5. Open http://localhost:4000
+
+STUDENT: student@brightpath.demo
+ADMIN:   admin@brightpath.demo
+PASSWORD FOR BOTH: Learn@123
+
+Or use the Student demo / Admin demo buttons on the login screen.
+Create a new account for your own progress.
+
+SOURCE: client/ and server/
+DEVELOPMENT: DEV_WINDOWS.bat (http://localhost:5173)
+DETAILS: README.md
+HELP: docs/TROUBLESHOOTING.md
+TESTS: npm run build, then npm test
+
+The SQLite database is created automatically on first start.
+No API keys, Python, MongoDB, or paid services are needed.
